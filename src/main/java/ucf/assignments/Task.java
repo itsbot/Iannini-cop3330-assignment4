@@ -8,5 +8,6 @@ public class Task {
     // Options for what to do to a list item
     void appendItem() {}
     void deleteItem() {}
-    void markComplete() {}
+    void markItemComplete() {}
+    void changeDate() {} // Should both tasks and items have due dates?
 }

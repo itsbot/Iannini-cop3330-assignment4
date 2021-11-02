@@ -8,5 +8,9 @@ public class List {
     // Options selecting list + action
     void createList() {}
     void deleteList() {}
-    void editList() {}
+    void editList() {
+        // editTitle
+        // editDate
+        // markListComplete
+    } // -> task
 }

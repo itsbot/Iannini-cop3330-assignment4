@@ -1,3 +1,7 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 4 Solution
+ *  Copyright 2021 Patrick Iannini
+ */
 package ucf.assignments;
 
 import javafx.application.Application;
@@ -7,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class ToDoMain extends Application {
 
@@ -17,7 +22,7 @@ public class ToDoMain extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/ToDoMain.fxml"));
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/ToDoMain.fxml")));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.setTitle("ToDo");
